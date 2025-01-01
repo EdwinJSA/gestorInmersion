@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="shortcut icon" href="{% static 'logo.ico' %}" type="image/x-icon">
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <title>Inmersion Musical App</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<section class="min-h-screen flex items-center justify-center bg-gray-100 px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col w-full max-w-md p-8 sm:p-10 lg:p-12 bg-white rounded-2xl shadow-xl">
+        <div class="flex items-center gap-3 pb-4">
+            <img src="{% static 'logo.png' %}" alt="Logo" class="w-12 h-12">
+            <h1 class="text-2xl sm:text-3xl font-bold text-gray-700">Inmersion Musical</h1>
+        </div>
+        <p class="text-sm font-light text-gray-500 pb-8">Inicio de Sesión</p>
+        <form class="flex flex-col gap-6">
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-700">Usuario</label>
+                <div class="relative">
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                            <path d="M22 7L13.03 12.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </svg>
+                    </span>
+                    <input type="email" id="email" placeholder="name@company.com" class="pl-12 w-full bg-gray-50 border border-gray-300 rounded-lg text-gray-600 py-3 px-4 focus:outline-none focus:ring-2 focus:ring-indigo-400">
+                </div>
+            </div>
+            <div>
+                <label for="password" class="block text-sm font-medium text-gray-700">Contraseña</label>
+                <div class="relative">
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                            <path d="M12 8v8"></path>
+                            <path d="M8.5 14L15.5 10"></path>
+                            <path d="M8.5 10L15.5 14"></path>
+                        </svg>
+                    </span>
+                    <input type="password" id="password" placeholder="••••••••" class="pl-12 w-full bg-gray-50 border border-gray-300 rounded-lg text-gray-600 py-3 px-4 focus:outline-none focus:ring-2 focus:ring-indigo-400">
+                </div>
+            </div>
+            <button type="submit" class="w-full text-white bg-indigo-600 hover:bg-indigo-700 focus:ring-4 focus:outline-none focus:ring-indigo-300 font-medium rounded-lg text-sm px-5 py-3 transition duration-150 ease-in-out">
+                Login
+            </button>
+        </form>
+        <p class="text-sm font-light text-gray-500 mt-6">Hola, 
+            <a href="#" class="font-medium text-indigo-600 hover:underline">Olvidaste tu Contraseña? </a>
+        </p>
+    </div>
+</section>
+
+</body>
+</html>
