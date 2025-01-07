@@ -6,6 +6,11 @@
     animation: slider 20s linear infinite;
 }
 
+#portadaSlider{
+    background-image: url('portada.jpg');
+}
+
+
 @keyframes slider {
     0% {
         background-image: url('portada.jpg');
